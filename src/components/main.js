@@ -11,7 +11,7 @@ const Main = () => {
  
  //action
  const fetchWeather = async (city) => {
-   const data = await fetch(`http://api.apixu.com/v1/current.json?key=7c51975a866c4bb4abf184904183103&q=${city}`);
+   const data = await fetch(`http://api.apixu.com/v1/current.json?key=<YOUR_APIXU_KEY>=${city}`);
    const dataJSON = await data.json();
    
    // ____ FIXES NOT IN THE CODE REVIEW
